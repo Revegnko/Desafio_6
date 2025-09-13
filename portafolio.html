@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio - Nombre Apellido</title>
+  <link rel="stylesheet" href="./essets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">Bastián Garrido</a>
+      <ul class="nav-links">
+        <li><a href="index.html#experience">CV</a></li>
+        <li><a href="#works">Trabajos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="works" class="grid">
+      <h1>Mi portafolio</h1>
+
+      <div class="work">
+        <img src="./essets/Imags/Vibrand.png" alt="Proyecto Vibrand">
+        <h3>Proyecto Vibrand</h3>
+        <p>Web generada para y enfocada en contacto de clientes a tarvez de correo y whatsapp directo.</p>
+      </div>
+
+      <div class="work">
+        <img src="./essets/Imags/Sjo.png" alt="Proyecto SJO">
+        <h3>Proyecto SJO</h3>
+        <p>Web generada para y enfocada en contacto de clientes a tarvez de correo y whatsapp directo.</p>
+      </div>
+
+      <!-- duplica bloques .work para más proyectos -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><span id="year2"></span> Bastián Garrido B. — Portafolio.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

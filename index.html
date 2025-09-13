@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bastián Garrido - CV </title>
+    <link rel="stylesheet" href="./essets/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="brand" href="#">Mi Curriculum</a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="./portafolio.html">Portafolio</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about" class="hero">
+            <div>
+                <h1>Bastián Garrido B.</h1>
+                <p>Administrador | Jefe de Adquisiciones Constructora SJO | Vibrand.cl</p>
+            </div>
+        </section>
+
+        <section id="education" class="card">
+            <h2>Educación</h2>
+            <ul>
+                <li><strong>Admistración</strong> — Título (2005 - 2010)</li>
+                <li><strong>fullStack Javascrip / Bootcamp</strong> — En Formación </li>
+            </ul>
+        </section>
+
+        <section id="experience" class="card">
+            <h2>Experiencia</h2>
+            <article class="job">
+                <h3>Constructora Sjo — Jefe de Adquisiciones</h3>
+                <p class="meta">julio 2013 — a la fecha</p>
+                <p>Jefe de Compras con experiencia en el sector construcción, especializado en la planificación, gestión
+                    y negociación de adquisiciones de materiales, equipos y servicios. Enfocado en optimizar costos,
+                    garantizar la calidad de los insumos y asegurar el abastecimiento oportuno para la continuidad de
+                    los proyectos.</p>
+            </article>
+
+            <article class="job">
+                <h3> Agencia de Marketing digital (Vibrand)</h3>
+                <p class="meta">junio 2024 a la fecha</p>
+                <p>En Vibrand.cl somos una agencia de marketing digital enfocada en hacer crecer marcas con estrategias
+                    creativas y medibles. Potenciamos la presencia online de negocios a través de publicidad digital,
+                    branding y contenidos que generan resultados reales.</p>
+            </article>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contacto</h2>
+            <p>Email: bastian@vibrand.cl — LinkedIn: <a href="https://www.linkedin.com/in/bastiangarridob/">perfil</a> —
+                GitHub: <a href="https://github.com/Efeoerre">usuario</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Bastián Garrido </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
