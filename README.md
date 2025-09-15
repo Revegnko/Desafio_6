@@ -14,8 +14,7 @@ Print del commit en consola: IMG: https://github.com/SuperGer/SuperGer.github.io
 
 Fork del segundo repositorio: desafíoFinal
 
-git@github.com:Efeoerre/desafioFinal.git
-
+https://github.com/Efeoerre/desafioFinal.git
 Print del commit en consola: IMG: 
 
 
