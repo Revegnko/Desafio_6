@@ -12,12 +12,16 @@
     <header class="site-header">
         <nav class="nav container">
             <a class="brand" href="#">Mi Curriculum</a>
+
+            <!-- Botón hamburguesa -->
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+            <!-- Menú de navegación -->
             <ul class="nav-links">
                 <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#education">Educación</a></li>
                 <li><a href="#experience">Experiencia</a></li>
                 <li><a href="./portafolio.html">Portafolio</a></li>
-
             </ul>
         </nav>
     </header>
@@ -33,8 +37,8 @@
         <section id="education" class="card">
             <h2>Educación</h2>
             <ul>
-                <li><strong>Admistración</strong> — Título (2005 - 2010)</li>
-                <li><strong>fullStack Javascrip / Bootcamp</strong> — En Formación </li>
+                <li><strong>Administración</strong> — Título (2005 - 2010)</li>
+                <li><strong>FullStack JavaScript / Bootcamp</strong> — En Formación </li>
             </ul>
         </section>
 
@@ -50,8 +54,8 @@
             </article>
 
             <article class="job">
-                <h3> Agencia de Marketing digital (Vibrand)</h3>
-                <p class="meta">junio 2024 a la fecha</p>
+                <h3>Agencia de Marketing digital (Vibrand)</h3>
+                <p class="meta">junio 2024 — a la fecha</p>
                 <p>En Vibrand.cl somos una agencia de marketing digital enfocada en hacer crecer marcas con estrategias
                     creativas y medibles. Potenciamos la presencia online de negocios a través de publicidad digital,
                     branding y contenidos que generan resultados reales.</p>
@@ -60,8 +64,10 @@
 
         <section id="contact" class="card">
             <h2>Contacto</h2>
-            <p>Email: bastian@vibrand.cl — LinkedIn: <a href="https://www.linkedin.com/in/bastiangarridob/">perfil</a> —
-                GitHub: <a href="https://github.com/Efeoerre">usuario</a></p>
+            <p>Email: bastian@vibrand.cl — LinkedIn: 
+                <a href="https://www.linkedin.com/in/bastiangarridob/" target="_blank">perfil</a> — 
+                GitHub: <a href="https://github.com/Efeoerre" target="_blank">usuario</a>
+            </p>
         </section>
     </main>
 
@@ -72,7 +78,16 @@
     </footer>
 
     <script>
+        // Año dinámico en el footer
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Toggle del menú hamburguesa
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
     </script>
 </body>
 
